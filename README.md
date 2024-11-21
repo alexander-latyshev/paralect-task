@@ -1,1 +1,1 @@
-# paralect-task
+# vacancy-tracker
