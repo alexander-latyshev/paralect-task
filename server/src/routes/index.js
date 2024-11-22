@@ -7,6 +7,6 @@ const categoryRouter = require("./category.router");
 
 router.use("/vacancies", vacancyRouter);
 router.use("/currencies", currencyRouter);
-router.use("/category", categoryRouter);
+router.use("/categories", categoryRouter);
 
 module.exports = router;
