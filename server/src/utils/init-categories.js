@@ -15,12 +15,6 @@ module.exports = async function () {
       slug: "my-vacancies",
       url: `${process.env.CLIENT_URL}/my-vacancies`,
     },
-    {
-      name: "tracked vacancies",
-      path: "/tracked-vacancies",
-      slug: "tracked-vacancies",
-      url: `${process.env.CLIENT_URL}/tracked-vacancies`,
-    },
   ];
 
   for (const category of categories) {

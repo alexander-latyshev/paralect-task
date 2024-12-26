@@ -6,7 +6,7 @@ class VacancyService {
   async getAllVacancies(page, limit) {
     try {
       page = page || Number(String(process.env.REQUEST_DEFAULT_PAGE)) || 1;
-      limit = limit || Number(String(process.env.REQUEST_DEFAULT_LIMIT)) || 10;
+      limit = limit || Number(String(process.env.REQUEST_DEFAULT_LIMIT)) || 7;
 
       const offset = (page - 1) * limit;
 
