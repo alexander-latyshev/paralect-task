@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
 *::after {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 body {
@@ -21,7 +22,7 @@ body {
 }
 * {
   transition: all ${({ theme }) => `${theme.durations.fs} ease-in-out`};
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 #root {
   width: 100%; 

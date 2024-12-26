@@ -30,6 +30,7 @@ export const lightTheme = {
     greyPrimary: "#888888",
     greySecondary: "#e0e0e0",
     white: "#ffffff",
+    red: "#f44336",
   },
   colors: {
     primary: "#000000",
@@ -53,7 +54,7 @@ export const lightTheme = {
     radius: { bs: "1px", lg: "5px", xl: "8px" },
   },
   shadows: {
-    drop: "#00000044",
+    drop: "hsla(210, 5%, 67%, .19)",
   },
 };
 

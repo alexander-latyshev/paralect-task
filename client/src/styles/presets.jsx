@@ -24,15 +24,17 @@ const Column = styled.div`
 
 const HeaderContainer = styled.header`
   display: flex;
-  height: 100%;
-  justify-content: center;
+  height: 80px;
+  padding: 0px 50px;
+  justify-content: space-between;
 `;
 
 const MainContainer = styled.main`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   height: 100%;
-  padding: 90px 60px 60px;
+  padding: 60px;
+  gap: 40px;
 `;
 
 const Container = styled.section`
@@ -57,16 +59,17 @@ const Button = styled.button`
   transition: all ${({ theme }) => theme.durations.md} ease-in-out;
   cursor: pointer;
   padding: 0.6rem 1.2rem;
+  box-sizing: border-box;
+  box-shadow: none;
   &:focus,
   &:focus-visible {
     outline: none;
-    border-color: none;
+    border-color: transparent;
   }
   &:hover {
     border-color: ${({ theme }) => theme.themeColor};
     color: ${({ theme }) => theme.colors.white};
     box-shadow: 0 0 5px ${({ theme }) => theme.themeColor};
-    box-sizing: border-box;
   }
 `;
 
@@ -92,6 +95,14 @@ const Title = styled.h1.attrs((props) => ({
   text-transform: capitalize;
 `;
 
+const Text = styled.span``;
+
+const Paragraph = styled.p`
+  pointer-events: none;
+  font-family: ${({ theme }) => theme.fontStyles.Raleway};
+  font-size: ${({ theme }) => theme.fontSizes.xs};
+`;
+
 export {
   Flex,
   Column,
@@ -101,4 +112,6 @@ export {
   Title,
   Container,
   AuthForm,
+  Paragraph,
+  Text,
 };
